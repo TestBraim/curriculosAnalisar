@@ -1,6 +1,6 @@
 // URLs dos PDFs
 const pdfFiles = [
-    'currículoBrayan.pdf',
+    'CurrículoBrayan.pdf',
     'Brayan-Pletsch-Currículo.pdf',
     'Curriculo-de-outra-pessoa-1.pdf',
     'Curriculo-de-outra-pessoa-2.pdf'
