@@ -1,0 +1,179 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos gerais */
+body {
+    background-color: #2b2b2b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Botão no canto superior direito */
+.top-right-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top-right-button button {
+    padding: 15px 30px;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.top-right-button button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+/* Container dos currículos */
+.curriculo-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+    max-width: 1600px;
+}
+
+/* Estilo de cada currículo */
+.curriculo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Estilo dos botões */
+.curriculo button {
+    padding: 20px 40px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.curriculo button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Estilo dos canvases para preview */
+.preview-canvas {
+    border: 2px solid #444;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    height: 400px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
+    border-top: 1px solid #444;
+}
+
+/* Media Queries para responsividade */
+
+/* Para dispositivos menores que 1200px */
+@media (max-width: 1200px) {
+    .curriculo-container {
+        gap: 30px; /* Ajusta o espaçamento */
+        flex-wrap: wrap; /* Permitir que os elementos quebrem de linha */
+        justify-content: space-around; /* Melhor distribuição */
+    }
+
+    .preview-canvas {
+        width: 250px;
+        height: 350px;
+    }
+
+    .curriculo button {
+        font-size: 16px; /* Ajusta tamanho da fonte */
+        padding: 15px 30px;
+    }
+}
+
+/* Para dispositivos menores que 768px */
+@media (max-width: 768px) {
+    .curriculo-container {
+        flex-direction: column; /* Alinhar os elementos verticalmente */
+        gap: 20px; /* Reduzir espaçamento */
+        align-items: center; /* Centralizar elementos */
+    }
+
+    .preview-canvas {
+        width: 230px; /* Ajuste do tamanho dos previews */
+        height: 320px;
+    }
+
+    .curriculo button {
+        font-size: 14px;
+        padding: 12px 25px;
+    }
+
+    .top-right-button {
+        top: 15px;
+        right: 15px;
+    }
+
+    .top-right-button button {
+        font-size: 14px;
+        padding: 10px 20px; /* Diminuir padding do botão */
+    }
+}
+
+/* Para dispositivos menores que 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 40px; /* Reduzir padding geral */
+    }
+
+    .preview-canvas {
+        width: 200px;
+        height: 280px; /* Ajustar previews */
+    }
+
+    .curriculo button {
+        font-size: 12px; /* Reduzir fonte */
+        padding: 10px 20px;
+    }
+
+    footer {
+        font-size: 14px; /* Ajustar fonte do rodapé */
+        padding: 20px; /* Reduzir padding do rodapé */
+    }
+}

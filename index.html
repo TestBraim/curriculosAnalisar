@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site com currículos e previews.">
+    <title>Currículos - Desenvolvido por Brayan Pletsch</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicionando PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</head>
+<body>
+    <!-- Botão no canto superior direito -->
+    <div class="top-right-button">
+        <button id="goToSite" onclick="window.open('https://brayan.blog', '_blank')">Ir para o Meu Site</button>
+    </div>
+
+    <div class="container">
+        <!-- Botões que exibem os currículos e previews -->
+        <div class="curriculo-container">
+            <!-- Currículo 1 -->
+            <div class="curriculo">
+                <button id="btn1" onclick="window.open('currículoBrayan.pdf', '_blank')">Exibir Currículo 1</button>
+                <canvas id="preview1" class="preview-canvas"></canvas>
+            </div>
+            
+            <!-- Currículo 2 -->
+            <div class="curriculo">
+                <button id="btn2" onclick="window.open('Brayan-Pletsch-Currículo.pdf', '_blank')">Exibir Currículo 2</button>
+                <canvas id="preview2" class="preview-canvas"></canvas>
+            </div>
+            
+            <!-- Currículo 3 -->
+            <div class="curriculo">
+                <button id="btn3" onclick="window.open('Curriculo-de-outra-pessoa-1.pdf', '_blank')">Exibir Currículo 3</button>
+                <canvas id="preview3" class="preview-canvas"></canvas>
+            </div>
+            
+            <!-- Currículo 4 -->
+            <div class="curriculo">
+                <button id="btn4" onclick="window.open('Curriculo-de-outra-pessoa-2.pdf', '_blank')">Exibir Currículo 4</button>
+                <canvas id="preview4" class="preview-canvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Desenvolvido por Brayan Pletsch &copy;
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
